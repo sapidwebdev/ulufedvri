@@ -1,1 +1,54 @@
+<?php
 
+$pdo = new PDO('mysql:host=localhost;dbname=databasename', 'username', 'password');
+$sql = "SELECT * FROM users";
+foreach ($pdo->query($sql) as $row) {
+   echo $row['email']."<br />";
+   echo $row['vorname']."<br />";
+   echo $row['nachname']."<br /><br />";
+   
+   
+   
+   
+   
+   
+   $pdo = new PDO('mysql:host=localhost;dbname=databasename', 'username', 'password');
+ 
+$statement = $pdo->prepare("INSERT INTO users (email, vorname, nachname) VALUES (?, ?, ?)");
+$statement->execute(array('info@php-einfach.de', 'Klaus', 'Neumann'));   
+ 
+$neue_id = $pdo->lastInsertId();
+echo "Neuer Nutzer mit id $neue_id angelegt";
+   
+   
+   
+   
+   
+$.post();
+Insertcatalog_product_entity_decimal;
+
+?>
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var d = new Date();
+  var n = d.getHours();
+  var s = d.getMinutes();
+  document.getElementById("demo").innerHTML = s;
+}
+</script>
+
+
+
+<script>
+document.ready(function({
+function aucthour(){
+
+}
+setTimeout(aucthour,60000000);
+
+});
+</script>
