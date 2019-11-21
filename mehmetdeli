@@ -7,11 +7,8 @@ foreach ($pdo->query($sql) as $row) {
    echo $row['vorname']."<br />";
    echo $row['nachname']."<br /><br />";
    
-   
-   
-   
-   
-   
+    
+      
    $pdo = new PDO('mysql:host=localhost;dbname=databasename', 'username', 'password');
  
 $statement = $pdo->prepare("INSERT INTO users (email, vorname, nachname) VALUES (?, ?, ?)");
